@@ -10,9 +10,22 @@
 		F8D86DC52CDAC9580022985B /* Wif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F8228C212CDBE53E0069349E /* Exceptions for "Wif" folder in "Wif" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F8D86DC42CDAC9580022985B /* Wif */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F8D86DC72CDAC9580022985B /* Wif */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F8228C212CDBE53E0069349E /* Exceptions for "Wif" folder in "Wif" target */,
+			);
 			path = Wif;
 			sourceTree = "<group>";
 		};
@@ -127,6 +140,8 @@
 /* Begin XCBuildConfiguration section */
 		F8D86DD12CDAC95B0022985B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = F8D86DC72CDAC9580022985B /* Wif */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -190,6 +205,8 @@
 		};
 		F8D86DD22CDAC95B0022985B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = F8D86DC72CDAC9580022985B /* Wif */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -255,6 +272,7 @@
 				DEVELOPMENT_TEAM = KRUHW4V9N9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Wif/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +302,7 @@
 				DEVELOPMENT_TEAM = KRUHW4V9N9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Wif/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

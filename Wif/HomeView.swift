@@ -20,9 +20,19 @@ struct HomeView: View {
                 // MARK: Iplement query
             } label: {
                 Text("Go")
+                    .font(.system(size: 18).bold())
+                    .foregroundStyle(Color.gradient)
+                    .padding(10)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(Color.colorT)
+                    )
             }
         }
         .padding()
+        .onAppear {
+            print(Bundle.main.infoDictionary? ["API_KEY"] as? String)
+        }
     }
 }
 
