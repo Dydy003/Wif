@@ -11,6 +11,8 @@ struct HomeView: View {
     
     @State var query: String = ""
     
+    var service = DataService()
+    
     var body: some View {
         HStack {
             TextField("Wat're you looking for", text: $query)
@@ -30,8 +32,8 @@ struct HomeView: View {
             }
         }
         .padding()
-        .onAppear {
-            print(Bundle.main.infoDictionary? ["API_KEY"] as? String)
+        .task {
+            await service.businessSearch()
         }
     }
 }
